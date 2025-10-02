@@ -54,4 +54,6 @@ popd || exit
 
 rm -rf output
 mkdir -p output
-cp sdk/output/image/* "output/"
+rm -rf output
+mkdir -p output
+cp sdk/output/image/update.img "output/$DEVICE_NAME-sysupgrade.img"
